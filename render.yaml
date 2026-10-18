@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: edurise-academy
+    runtime: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 20
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: TUTOR_NAME
+        value: Geethanjali
+      - key: TUTOR_EMAIL
+        value: geethanjalireddy31@gmail.com
+      - key: TUTOR_PHONE
+        value: "7207039791"
+      - key: TUTOR_PASSWORD
+        sync: false
