@@ -4,6 +4,7 @@
   "description": "Tuition Management API (Express + MongoDB)",
   "main": "src/index.js",
   "scripts": {
+    "build": "npm install --prefix ../client --include=dev && npm run build --prefix ../client",
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
     "seed:demo": "node src/seed-demo.js",
