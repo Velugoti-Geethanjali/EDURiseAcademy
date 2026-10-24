@@ -49,7 +49,7 @@ router.patch('/notifications/:id/read', ah(async (req, res) => {
 // ================= Settings =================
 router.put('/settings', tutorOnly, ah(async (req, res) => {
   const s = await getSettings();
-  ['tuitionName', 'tagline', 'logoUrl', 'phone', 'whatsapp', 'email', 'address', 'subjects', 'grades', 'lowBalanceThreshold']
+  ['tuitionName', 'tagline', 'phone', 'whatsapp', 'email', 'address', 'subjects', 'grades', 'lowBalanceThreshold']
     .forEach((k) => { if (req.body[k] !== undefined) s[k] = req.body[k]; });
   await s.save();
   res.json(s);

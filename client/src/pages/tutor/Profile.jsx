@@ -24,7 +24,7 @@ export default function TutorProfile() {
     const split = (t) => t.split(',').map((x) => x.trim()).filter(Boolean);
     try {
       await api.put('/settings', {
-        tuitionName: s.tuitionName, tagline: s.tagline, logoUrl: s.logoUrl, phone: s.phone, whatsapp: s.whatsapp, email: s.email, address: s.address,
+        tuitionName: s.tuitionName, tagline: s.tagline, phone: s.phone, whatsapp: s.whatsapp, email: s.email, address: s.address,
         subjects: split(s.subjectsText), grades: split(s.gradesText), lowBalanceThreshold: Number(s.lowBalanceThreshold) || 2,
       });
       await reloadSettings(); toast('Tuition settings saved');
@@ -52,7 +52,6 @@ export default function TutorProfile() {
         <SectionCard title="Tuition settings" subtitle="Name, contact details, subjects and classes" icon="tune">
           <form onSubmit={saveSettings} className="grid sm:grid-cols-2 gap-4">
             <Field label="Tuition name"><input className="input" value={s.tuitionName || ''} onChange={ss('tuitionName')} /></Field>
-            <Field label="Logo URL (optional)"><input className="input" value={s.logoUrl || ''} onChange={ss('logoUrl')} placeholder="https://…/eduurise-logo.png" /></Field>
             <Field label="Tagline" className="sm:col-span-2"><input className="input" value={s.tagline || ''} onChange={ss('tagline')} /></Field>
             <Field label="Contact phone"><input className="input" value={s.phone || ''} onChange={ss('phone')} /></Field>
             <Field label="WhatsApp number" hint="With country code, e.g. 919876543210"><input className="input" value={s.whatsapp || ''} onChange={ss('whatsapp')} /></Field>
