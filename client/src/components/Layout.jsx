@@ -55,7 +55,7 @@ export default function Layout({ role }) {
 
   const Brand = (
     <Link to={base} className="flex items-center gap-2.5">
-      <img src={settings?.logoUrl || '/logo.png'} alt="" className="w-10 h-10 rounded-full object-cover shrink-0" />
+      <img src={settings?.logoUrl || '/eduurise-logo.png'} alt="" className="w-10 h-10 rounded-full object-cover shrink-0" />
       <div className="flex flex-col leading-tight">
         <span className="font-semibold text-on-surface">{first} {rest.slice(0, 1).join(' ')}</span>
         <span className="text-xs font-semibold text-primary">{rest.slice(1).join(' ') || 'Tuition'}</span>

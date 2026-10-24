@@ -19,7 +19,7 @@ export function PublicHeader() {
       <header className="bg-white border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2.5">
-            <img src={settings?.logoUrl || '/logo.png'} alt="" className="w-11 h-11 rounded-full object-cover" />
+            <img src={settings?.logoUrl || '/eduurise-logo.png'} alt="" className="w-11 h-11 rounded-full object-cover" />
             <div className="leading-tight">
               <div className="font-semibold text-lg">{settings?.tuitionName || 'EduuRise Academy'}</div>
               {settings?.tutor?.name && <div className="text-xs muted">Private tutoring by {settings.tutor.name}</div>}
@@ -80,7 +80,7 @@ export default function Landing() {
             <Link to="/register" className="btn btn-primary">Register now <Icon name="arrow_forward" size={18} /></Link>
           </div>
         </div>
-        <img src={settings?.logoUrl || '/logo.png'} alt={settings?.tuitionName || 'EduuRise Academy'}
+        <img src={settings?.logoUrl || '/eduurise-logo.png'} alt={settings?.tuitionName || 'EduuRise Academy'}
           className="w-48 h-48 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full object-cover shadow-lg self-center md:mr-6" />
       </section>
 

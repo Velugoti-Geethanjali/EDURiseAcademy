@@ -52,7 +52,7 @@ export default function TutorProfile() {
         <SectionCard title="Tuition settings" subtitle="Name, contact details, subjects and classes" icon="tune">
           <form onSubmit={saveSettings} className="grid sm:grid-cols-2 gap-4">
             <Field label="Tuition name"><input className="input" value={s.tuitionName || ''} onChange={ss('tuitionName')} /></Field>
-            <Field label="Logo URL (optional)"><input className="input" value={s.logoUrl || ''} onChange={ss('logoUrl')} placeholder="https://…/logo.png" /></Field>
+            <Field label="Logo URL (optional)"><input className="input" value={s.logoUrl || ''} onChange={ss('logoUrl')} placeholder="https://…/eduurise-logo.png" /></Field>
             <Field label="Tagline" className="sm:col-span-2"><input className="input" value={s.tagline || ''} onChange={ss('tagline')} /></Field>
             <Field label="Contact phone"><input className="input" value={s.phone || ''} onChange={ss('phone')} /></Field>
             <Field label="WhatsApp number" hint="With country code, e.g. 919876543210"><input className="input" value={s.whatsapp || ''} onChange={ss('whatsapp')} /></Field>
