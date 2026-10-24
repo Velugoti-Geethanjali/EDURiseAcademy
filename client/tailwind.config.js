@@ -1,4 +1,4 @@
-// Design tokens taken from the Stitch "Edurise Academy" design system
+// Design tokens taken from the Stitch "EduuRise Academy" design system
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,jsx}'],

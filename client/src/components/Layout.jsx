@@ -50,7 +50,7 @@ export default function Layout({ role }) {
   useEffect(() => { setDrawer(false); window.scrollTo(0, 0); }, [location.pathname]);
 
   const doLogout = () => { logout(); navigate('/'); };
-  const name = settings?.tuitionName || 'Edurise Academy';
+  const name = settings?.tuitionName || 'EduuRise Academy';
   const [first, ...rest] = name.split(' ');
 
   const Brand = (

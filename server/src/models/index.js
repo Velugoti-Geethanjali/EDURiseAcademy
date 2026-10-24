@@ -165,7 +165,7 @@ notificationSchema.index({ user: 1, createdAt: -1 });
 // ---------- Tuition settings (single document) ----------
 const settingsSchema = new Schema(
   {
-    tuitionName: { type: String, default: 'Edurise Academy' },
+    tuitionName: { type: String, default: 'EduuRise Academy' },
     tagline: { type: String, default: 'Personalised tutoring. Measurable academic growth.' },
     logoUrl: String,
     phone: { type: String, default: '+91 72070 39791' },

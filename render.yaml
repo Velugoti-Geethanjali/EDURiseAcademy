@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: edurise-academy
+    name: eduurise-academy
     runtime: node
     plan: free
     buildCommand: npm run build

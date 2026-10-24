@@ -1,7 +1,7 @@
-# Edurise Academy – Tuition Management App (MERN)
+# EduuRise Academy – Tuition Management App (MERN)
 
 A private tuition app for **one tutor and their enrolled students**.
-Stack: **MongoDB Atlas + Express + React (Vite + Tailwind) + Node.js**. UI follows the Stitch "Edurise Academy" design.
+Stack: **MongoDB Atlas + Express + React (Vite + Tailwind) + Node.js**. UI follows the Stitch "EduuRise Academy" design.
 
 ## 1. Run it on your computer
 
